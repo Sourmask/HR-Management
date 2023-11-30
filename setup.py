@@ -1,5 +1,5 @@
 import mysql.connector as sql
-password=input("-- Enter Password :")
+password="84447060"#input("-- Enter Password :")
 SQLconnection=sql.connect(host='localhost',user='root',passwd=password)
 cr=SQLconnection.cursor()
 dbname="HRDEPT"
@@ -59,7 +59,7 @@ except:
     print("\n\033[1;31;10mEMPLOYEE TABLE CREATION FAILED\033[m\n")
 
 try:
-    file="HR Management Project 2023\\employee.csv"
+    file="employee.csv"
     csvtosql(file,dbname,tbname)
 except:
     print("\n\033[1;31;10mEMPLOYEE TABLE DATA ADDITION FAILED\033[m\n")
@@ -74,7 +74,7 @@ except:
     print("\n\033[1;31;10mEMPLOYEE TABLE CREATION FAILED\033[m\n")
 
 try:
-    file="HR Management Project 2023\\branch.csv"
+    file="branch.csv"
     csvtosql(file,dbname,tbname)
 except:
     print("\n\033[1;31;10mBRANCH TABLE DATA ADDITION FAILED\033[m\n")
