@@ -1,5 +1,5 @@
 import mysql.connector as sql
-password="84447060"#input("-- Enter Password :")
+password=input("-- Enter Password :")
 SQLconnection=sql.connect(host='localhost',user='root',passwd=password)
 cr=SQLconnection.cursor()
 dbname="HRDEPT"
